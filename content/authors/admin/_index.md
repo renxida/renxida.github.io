@@ -76,8 +76,10 @@ I am Xida Ren, pursuing a PhD in security & performance for ML Hardware at the U
 
 My current research interests include hardware security, workload profiling, and software-hardware co-design.
 
-I'm interested in learning more about AI related policy, especially as they pertain to ML hardware supply chain.
+I'm interested in learning more about AI related policy, especially as they pertain to ML hardware supply chain. I recently acquired an interest in AI Hardware proliferation.
 
-and regulation surrounding the semiconductor supply chain, especially ML-related hardware.
+I feel at home with people who like words, logic, thinking, and helping other people. I find some success finding friends like this among rationalists, effective altruists, and Astral Codex Ten blog readers.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+
+Nothing on this website represents the views of anybody but myself.
