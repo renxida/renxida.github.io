@@ -72,10 +72,12 @@ email: 'cedar.ren@gmail.com'
 highlight_name: true
 ---
 
-I am Xida Ren, pursuing a ML hardware security & performance PhD at UVA Computer Architecture Lab while interning at Intel.
+I am Xida Ren, pursuing a PhD in security & performance for ML Hardware at the University of Virginia Computer Architecture Lab. I am also interning at Intel.
 
-My current research interests include hardware security, profiling, and software-hardware co-design. 
+My current research interests include hardware security, workload profiling, and software-hardware co-design.
 
-I'm interested in learning about ML hardware supply chain security, and regulation surrounding the semiconductor supply chain, especially ML-related hardware.
+I'm interested in learning more about AI related policy, especially as they pertain to ML hardware supply chain.
+
+and regulation surrounding the semiconductor supply chain, especially ML-related hardware.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
