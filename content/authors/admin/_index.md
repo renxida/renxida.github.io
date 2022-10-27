@@ -78,7 +78,7 @@ My current research interests include hardware security, workload profiling, and
 
 I'm interested in learning more about AI governance and AI-related policy. I think hardware security features like the Intel Management Engine, Trusted Platform Modules, and TDX (trusted domain extensions) can be potentially used to support AI governance and I'm interested in talking about how.
 
-I feel at home with people who like words, logic, thinking, and helping other people. I find some success finding friends like this among rationalists, effective altruists, and Astral Codex Ten blog readers.
+I feel at home with people who like words, numbers, and diagrams. I find some success finding friends like this among XKCD readers, rationalists, effective altruists, and Astral Codex Ten blog readers. I am also always happy to meet new friends from realms beyond.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 
