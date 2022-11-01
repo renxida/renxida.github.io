@@ -14,7 +14,7 @@ organizations:
     url: https://www.intel.com/content/www/us/en/research/overview.html
   - name: University of Virginia
     url: https://www.virginia.edu/
-  
+
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include hardware security, profiling, and software-hardware co-design.
@@ -80,6 +80,8 @@ I'm interested in learning more about AI governance and AI-related policy. I thi
 
 I feel at home with people who like words, numbers, and diagrams. I find some success finding friends like this among XKCD readers, rationalists, effective altruists, and Astral Codex Ten blog readers. I am also always happy to meet new friends from realms beyond.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Resume_XidaRen.pdf" "newtab" >}}resumé{{< /staticref >}} (1 page).
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/CV_XidaRen.pdf" "newtab" >}}CV{{< /staticref >}} (4 pages).
 
 Nothing on this website represents the views of anybody but myself.
