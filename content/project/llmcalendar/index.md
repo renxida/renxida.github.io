@@ -43,4 +43,6 @@ Customization is a breeze. Whether you need to make a small tweak or a major ove
 
 While the webapp is still in its alpha phase, I have personally used it to plan my routine for a week straight. The only time I pulled an all-nighter was when I was writing this blog post out of sheer excitement for how well the project was working. I'm currently working on creating a production-quality UX and pushing the app to the cloud so that everyone can use it for free.
 
-If you're interested in trying out the webapp and seeing firsthand how it can revolutionize your routine, please contact me by email to get started. Together, we can help tame the chaos and bring order to even the most hectic of lives.
+If you're interested in trying out the webapp and seeing firsthand how it can revolutionize your routine, please contact me by email to get started.
+
+Let's tame the chaos and bring a suggestion of order to even the most hectic of lives.
