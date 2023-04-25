@@ -31,7 +31,7 @@ url_video: ''
 #   Otherwise, set `slides = ""`.
 # slides: "https://docs.google.com/presentation/d/1Ea7zuowf5Ie11Na7a9qek6S8Fc4ZlD65O5B49FOk1Eg/edit#slide=id.g2397805fcda_0_33"
 ---
-As someone who has experienced the chaos of life spiraling out of control due to decision paralysis, I know firsthand how important it is to have a consistent routine. But let's be honest: establishing and maintaining a routine can be a Sisyphean task, especially for those of us with ADHD or other executive-function challenges. That's why I created a webapp powered by GPT-4 that harnesses the power of artificial intelligence to make planning a routine as smooth and frictionless as possible.
+As someone who has experienced the chaos of life spiraling out of control due to decision paralysis, I know firsthand how important it is to have a consistent routine. But let's be honest: establishing and maintaining a routine can be a Sisyphean task, especially for the executively-challenged. That's why I created a webapp powered by GPT-4 that harnesses the power of artificial intelligence to make planning a routine as smooth and frictionless as possible.
 
 In the spirit of the Huberman Lab and other research-driven resources, I crafted a prompt for GPT-4 that encourages it to base its recommendations on "science-based tools" and "research-supported principles." This ensures that your generated routine is not only tailored to your specific needs but also grounded in evidence-based strategies.
 
