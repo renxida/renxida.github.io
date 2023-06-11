@@ -1,10 +1,10 @@
 ---
-title: Slides
-summary: An introduction to using Wowchemy's Slides feature.
+title: AI Daily Routine Generator Scheduling Assistant
+summary: This uses GPT4 uses science-based tools to generate your routine.
 authors: []
 tags: []
 categories: []
-date: '2019-02-05T00:00:00Z'
+date: '2023-04-24T00:00:00Z'
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: black
@@ -13,13 +13,25 @@ slides:
   highlight_style: dracula
 ---
 
-# Create slides in Markdown with Wowchemy
+## Use GPT-4 to convert some simple bullet points into a science-based routine
+    <div>
+    <div style="width: 100%;">
+        <div style="width: 50%; height: 100px; float: left; background: green;"> 
+            abcd
+        </div>
+        <div style="margin-left: 50%; height: 100px; background: blue;"> 
+            Right Div
+        </div>
+    </div>
 
-[Wowchemy](https://wowchemy.com/) | [Documentation](https://wowchemy.com/docs/content/slides/)
-![Routine Bullet Points](routine_bullets.png)
+![Routine Bullet Points](routine_bullets.png)  ![Routine Calendar](routine_calendar.png)
+
+<!-- [Wowchemy](https://wowchemy.com/) | [Documentation](https://wowchemy.com/docs/content/slides/) -->
+
 ---
 
 ## Features
+
 
 - Efficiently write slides in Markdown
 - 3-in-1: Create, Present, and Publish your slides
