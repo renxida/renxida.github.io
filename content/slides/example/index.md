@@ -16,7 +16,7 @@ slides:
 # Create slides in Markdown with Wowchemy
 
 [Wowchemy](https://wowchemy.com/) | [Documentation](https://wowchemy.com/docs/content/slides/)
-
+![Routine Bullet Points](routine_bullets.png)
 ---
 
 ## Features
