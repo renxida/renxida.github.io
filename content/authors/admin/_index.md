@@ -6,7 +6,7 @@ title: Xida Ren
 superuser: true
 
 # Role/position/tagline
-role: Computer Science PhD @ UVA & Hardware Performance Researcher @ Intel
+role: Compiler Engineer @ AMD
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -17,12 +17,12 @@ organizations:
 
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include hardware security, profiling, and software-hardware co-design.
+bio: I maintain torch-mlir for work. My other research interests include profiling, ml security, and software-hardware co-design.
 
 # Interests to show in About widget
 interests:
-  - Hardware Security
   - Profiling
+  - ML security / reliability
   - Software-hardware co-design
   - Semiconductor Supply Chain
 
