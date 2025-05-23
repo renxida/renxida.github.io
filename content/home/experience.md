@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Research Intern
-    company: Inte Labs
+    company: Intel Labs
     company_url: 'https://www.intel.com/content/www/us/en/research/overview.html'
     company_logo: org-intellabs
     location: Portland, Oregon
