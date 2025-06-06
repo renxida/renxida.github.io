@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Xida Ren
+title: Cedar Ren
 
 # Is this the primary user of the site?
 superuser: true
@@ -72,7 +72,7 @@ email: 'cedar.ren@gmail.com'
 highlight_name: true
 ---
 
-I am Xida Ren, pursuing a PhD in security & performance for ML Hardware at the University of Virginia Computer Architecture Lab. I am also interning at Intel.
+I am Cedar Ren (aka Xida Ren), pursuing a PhD in security & performance for ML Hardware at the University of Virginia Computer Architecture Lab. I am also interning at Intel.
 
 My current research interests include hardware security, workload profiling, and software-hardware co-design.
 
