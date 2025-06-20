@@ -22,13 +22,37 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Software Engineer
+    company: MatX
+    company_url: 'https://matx.com'
+    company_logo: org-matx
+    location: San Francisco Bay Area
+    date_start: '2025-04-01'
+    date_end: ''
+    description: |2-
+        * Simulator for high-performance LLM acceleration ASIC
+        * Quantization / Numerics
+        * Kernels and Dataflow
+        
+  - title: Machine Learning Compiler Engineer (LLVM / MLIR)
+    company: AMD
+    company_url: 'https://www.amd.com'
+    company_logo: org-amd
+    location: Seattle, Washington
+    date_start: '2023-11-01'
+    date_end: '2025-04-01'
+    description: |2-
+        * Built ONNX->torch mlir conversion pipeline
+        * Implemented prefix-tree kvcaching (aka radix caching) for LLM serving tool
+        * Wrote infrastructure to cut down overhead around accelerated transformer kernels
+
   - title: Research Intern
     company: Intel Labs
     company_url: 'https://www.intel.com/content/www/us/en/research/overview.html'
     company_logo: org-intellabs
     location: Portland, Oregon
     date_start: '2022-08-22'
-    date_end: ''
+    date_end: '2023-11-01'
     description: |2-
         * Profile workloads to generate architecture-independent workload summaries that use Basic Block Vectors to accurately predicts workload performance on novel hardware.
         * Accelerate summary generation by 1,000,000x using hardware performance counters.
