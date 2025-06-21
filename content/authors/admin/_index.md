@@ -6,7 +6,7 @@ title: Cedar Ren
 superuser: true
 
 # Role/position/tagline
-role: Compiler Engineer @ AMD
+role: Software Engineer @ MatX
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -17,7 +17,7 @@ organizations:
 
 
 # Short bio (displayed in user profile at end of posts)
-bio: I maintain torch-mlir for work. My other research interests include profiling, ml security, and software-hardware co-design.
+bio: I work on LLM acceleration ASICs at MatX. My research interests include profiling, ML security, and software-hardware co-design.
 
 # Interests to show in About widget
 interests:
@@ -72,9 +72,9 @@ email: 'cedar.ren@gmail.com'
 highlight_name: true
 ---
 
-I am Cedar Ren (aka Xida Ren), pursuing a PhD in security & performance for ML Hardware at the University of Virginia Computer Architecture Lab. I am also interning at Intel.
+I am Cedar Ren (aka Xida Ren), a Software Engineer at MatX working on high-performance LLM acceleration ASICs. I completed my PhD in Computer Science at the University of Virginia in 2023, focusing on security & performance for ML Hardware.
 
-My current research interests include hardware security, workload profiling, and software-hardware co-design.
+My research interests include hardware security, workload profiling, and software-hardware co-design.
 
 I'm interested in learning more about AI governance and AI-related policy. I think hardware security features like the Intel Management Engine, Trusted Platform Modules, and TDX (trusted domain extensions) can be potentially used to support AI governance and I'm happy to talk about how.
 
