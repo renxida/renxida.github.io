@@ -72,9 +72,9 @@ email: 'cedar.ren@gmail.com'
 highlight_name: true
 ---
 
-I am Cedar Ren (aka Xida Ren), a Software Engineer at MatX working on high-performance LLM acceleration ASICs. I completed my PhD in Computer Science at the University of Virginia in 2023, focusing on security & performance for ML Hardware.
+I am Cedar Ren. I write kernels and other systems code for high-performance LLM acceleration ASICs.
 
-My research interests include hardware security, workload profiling, and software-hardware co-design.
+My interests include systems, hierarchies of abstraction, and various representations for encoding understandings of systems.
 
 I'm interested in learning more about AI governance and AI-related policy. I think hardware security features like the Intel Management Engine, Trusted Platform Modules, and TDX (trusted domain extensions) can be potentially used to support AI governance and I'm happy to talk about how.
 
