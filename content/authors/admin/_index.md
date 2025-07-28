@@ -21,8 +21,7 @@ bio: I work on LLM acceleration ASICs at MatX. My research interests include pro
 
 # Interests to show in About widget
 interests:
-  - Profiling
-  - ML security / reliability
+  - Tensor Hardware Performance
   - Software-hardware co-design
   - Semiconductor Supply Chain
 
@@ -72,11 +71,14 @@ email: 'cedar.ren@gmail.com'
 highlight_name: true
 ---
 
-I am Cedar Ren. I write kernels and other systems code for high-performance LLM acceleration ASICs.
+I am Cedar Ren. I write kernels, compiler, simulation, and other systems code for high-performance LLM acceleration ASICs.
 
-My interests include systems, hierarchies of abstraction, and various representations for encoding understandings of systems.
+I'm interested in systems, hierarchies of astraction, and representations of knowledge.
 
-I'm interested in learning more about AI governance and AI-related policy. I think hardware security features like the Intel Management Engine, Trusted Platform Modules, and TDX (trusted domain extensions) can be potentially used to support AI governance and I'm happy to talk about how.
+Chat with me about:
+- vanishign and exploding gradients
+- evolution of moral (cooperative) behavior
+- incentives and addiction on social media
 
 I feel at home with people who like words, numbers, and diagrams.
 
