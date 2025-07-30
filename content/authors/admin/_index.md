@@ -75,12 +75,11 @@ I am Cedar Ren. I write kernels, compiler, simulation, and other systems code fo
 
 I'm interested in systems, hierarchies of astraction, and representations of knowledge.
 
-Chat with me about:
-- vanishign and exploding gradients
-- evolution of moral (cooperative) behavior
-- incentives and addiction on social media
-
 I feel at home with people who like words, numbers, and diagrams.
+
+See my work:
+- compiler / LLM serving work at AMD: [github here](https://github.com/nod-ai/shark-ai/pulls?q=is%3Apr+author%3Arenxida)
+- x86 hardware security: [google scholar](https://scholar.google.com/citations?user=v3MIOTkAAAAJ&hl=en&oi=sra#d=gs_hdr_drw&t=1753917064342)
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Resume_XidaRen.pdf" "newtab" >}}resumé{{< /staticref >}} (1 page).
 
