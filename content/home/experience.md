@@ -65,7 +65,7 @@ experience:
     company_logo: org-uva
     location: Charlottesville, VVirginia
     date_start: '2019-08-23'
-    date_end: ''
+    date_end: '2023 - Dropped Out'
     description: |2-
       * Discovered [I See Dead Micro-Ops](https://ieeexplore.ieee.org/document/9499837), a critical security flaw that threatened execution integrity and data security in modern x86 processors. Published at [ISCA 2021](https://iscaconf.org/isca2021/).
       * Developed performance preserving Spectre defenses for SMT, published under [SecSMT](https://www.usenix.org/conference/usenixsecurity22/presentation/taram) at [USENIX Security 2022](https://www.usenix.org/conference/usenixsecurity22).
