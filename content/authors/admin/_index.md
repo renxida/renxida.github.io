@@ -30,7 +30,7 @@ education:
   courses:
     - course: PhD in Computer Science
       institution: University of Virginia
-      year: 2023
+      year: 2023 (dropped out)
     - course: BSc in Computer Science and Mathematics
       institution: College of William and Mary
       year: 2019
