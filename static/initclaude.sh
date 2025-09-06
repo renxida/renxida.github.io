@@ -33,11 +33,11 @@ cat > ~/.claude/settings.json << 'EOF'
 {
   "permissions": {
     "allow": [
-      "Read()",
-      "Search()",
-      "Edit()",
-      "Write()",
-      "Bash(*)"
+      "Read",
+      "Search",
+      "Edit",
+      "Write",
+      "Bash"
     ]
   }
 }
