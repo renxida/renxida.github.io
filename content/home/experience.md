@@ -59,13 +59,13 @@ experience:
         * Generate multi-platform executable benchmarks based on performance summaries using MLIR.
         * Use differential privacy to enable trace-sharing across organizational boundaries without concern for leaking sensitive IP.
 
-  - title: PhD Candidate
+  - title: PhD Candidate (Dropped Out)
     company: University of Virginia
     company_url: 'https://engineering.virginia.edu/departments/computer-science'
     company_logo: org-uva
-    location: Charlottesville, VVirginia
+    location: Charlottesville, Virginia
     date_start: '2019-08-23'
-    date_end: '2023 - Dropped Out'
+    date_end: '2023-08-01'
     description: |2-
       * Discovered [I See Dead Micro-Ops](https://ieeexplore.ieee.org/document/9499837), a critical security flaw that threatened execution integrity and data security in modern x86 processors. Published at [ISCA 2021](https://iscaconf.org/isca2021/).
       * Developed performance preserving Spectre defenses for SMT, published under [SecSMT](https://www.usenix.org/conference/usenixsecurity22/presentation/taram) at [USENIX Security 2022](https://www.usenix.org/conference/usenixsecurity22).
