@@ -3,10 +3,47 @@
 # Claude and GitHub setup script
 # Usage: curl -sSL https://renxida.github.io/initclaude.sh | bash
 
-# Create tmux windows for Claude setup
-tmux new-window -n 'claude-setup' 'npm install -g @anthropic-ai/claude-code && claude'
-tmux new-window -n 'gh-setup' 'gh auth login && gh repo clone stroop'
+echo "Starting setup..."
 
-echo "Claude and GitHub setup windows created in tmux"
-echo "Switch to 'claude-setup' window to complete Claude installation"
-echo "Switch to 'gh-setup' window to authenticate with GitHub"
+# GitHub authentication first
+echo "Authenticating with GitHub..."
+gh auth login
+
+# Clone stroop repo in background
+echo "Cloning stroop repository in background..."
+nohup gh repo clone stroop > ./git_clone_stroop.log 2>&1 &
+
+# Install Claude CLI
+echo "Installing Claude CLI..."
+npm install -g @anthropic-ai/claude-code
+
+# Initialize Claude in tmux window (for interactive setup)
+echo "Starting Claude initialization in tmux..."
+tmux new-window -n 'claude-init' 'claude'
+
+# Wait a moment for user to complete init, then set permissions
+echo "Once Claude initialization is complete, press Enter to configure permissions..."
+read -r
+
+# Create Claude settings directory if it doesn't exist
+mkdir -p ~/.claude
+
+# Write permissions to settings.json
+cat > ~/.claude/settings.json << 'EOF'
+{
+  "permissions": {
+    "allow": [
+      "Read()",
+      "Search()",
+      "Edit()",
+      "Write()",
+      "Bash(*)"
+    ]
+  }
+}
+EOF
+
+echo "Setup complete!"
+echo "- GitHub authenticated"
+echo "- Stroop repository cloning in background (check ./git_clone_stroop.log)"
+echo "- Claude CLI installed and permissions configured"
