@@ -1,0 +1,127 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.2in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{bold-extra}
+\usepackage[T1]{fontenc}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{\normalsize\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2pt}{2pt}
+
+% Subsection formatting
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{0pt}{0.5em}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Reduce list spacing
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,itemsep=-2pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Large \textbf{Cedar Ren}} \\
+    (757) 279-4582 \hspace{0.3cm} | \hspace{0.3cm} \href{https://renresear.ch}{renresear.ch} \hspace{0.3cm} | \hspace{0.3cm} \href{mailto:cedar.ren@gmail.com}{cedar.ren@gmail.com}
+\end{center}
+
+\section{Education}
+
+\textbf{University of Virginia} \hfill Sep 2019 -- Jan 2023 \\
+\textit{Dropped out of PhD in Computer Science} | Computer Architecture \& some ML | GRE: Verbal:167, Quant:168 \hfill \textit{GPA}: 4.0
+
+\textbf{College of William and Mary} \hfill August 2016 -- May 2019 \\
+\textit{Bachelors of Science} | Double Major in Computer Science and Mathematics \hfill \textit{GPA}: 3.8
+
+\section{Skills}
+
+\textbf{Programming Languages:} Rust, C++, Python, C, Zig, SQL, MatLab, Lean \\
+\textbf{Software:} Torch, Numpy, Keras, TensorFlow, sklearn, Linux daily driver \\
+\textbf{Specializations:} Machine Learning, Queuing Theory, Statistics, Probability, CPU/GPU Performance Profiling \\
+\textbf{Interests:} Security, Hardware Accelerators, Formal Verification, Ursula K LeGuin books, FengShui
+
+\section{Work Experience}
+
+\vspace{3pt}
+\textbf{MatX} -- Software Stack for Transformer ASICs \hfill Apr 2025 -- Current
+\begin{itemize}
+    \item Provide feedback for hardware design by developing cycle-accurate simulator and modeling performance requirements of recent LLMs (Deepseek, Kimi, GPT-OSS)
+    \item Develop research kernels and compilers to support hardware design.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{AMD} -- Open source ML compiler stack \hfill Sep 2023 -- Apr 2025
+\begin{itemize}
+    \item Lead bring-up of performant serving stack for pre-compiled LLMs by writing the CI setup, implementing prefix-sharing kv caching, and squashing numerous bugs. See list of PRs \href{https://github.com/nod-ai/shark-ai/pulls?q=is\%3Apr+author\%3Arenxida}{here}.
+    \item Enabled performant compilation of LLMs on Vulcan and ROCm via contributions to \href{https://github.com/llvm/torch-mlir/pulls?q=is\%3Apr+author\%3Arenxida}{torch-mlir}, \href{https://github.com/iree-org/iree}{IREE} \& \href{https://github.com/nod-ai/SHARK-TestSuite/pulls?q=is\%3Apr+author\%3Arenxida}{SHARK-TestSuite}
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Stealth Mode Crypto Data Company / Consulting role} \hfill Mar-Sep 2023
+\begin{itemize}
+    \item Improved Zig Etherium implementation performance by $\sim$2x by migrating to an 100x faster AVX512 vectorized hash function
+    \item Detect performance hotspots w/ Tracy with performance counters + instrumentation
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Intel Labs} -- Architecture Tooling Group | Research Intern \hfill Oct 2022 -- Jan 2023
+\begin{itemize}
+    \item Accelerate SimPoint generation by 200x using hardware performance counters sampling to avoid instrumentation
+    \item Achieve $<$3\% CPI and $<$10\% MPKI estimation accuracy while retaining 1,000,000x benchmarking speedup from SimPoint
+\end{itemize}
+
+\vspace{3pt}
+\textbf{University of Virginia} -- Computer Science Department | PhD Candidate \hfill Sep 2019 -- Jan 2023
+\begin{itemize}
+    \item Applied formal verification to ensure that quantized machine learning models remained invulnerable to adversarial attacks using DNNV (\href{https://github.com/dlshriver/dnnv}{https://github.com/dlshriver/dnnv}), ONNX, and ReluPlex (\href{https://arxiv.org/abs/1702.01135}{https://arxiv.org/abs/1702.01135})
+    \item Discovered 2 critical security flaws that threatened execution integrity and data security in modern x86 processors.
+    \item Mentored 5 undergraduate students on computer architecture and machine learning projects, breaking down large projects into digestible chunks, as well as providing instruction on computer architecture, side-channel attacks, machine learning compilers, and ML models (incl. model specification, feature engineering, parameter tuning, and cross-validation).
+\end{itemize}
+
+\vspace{3pt}
+\textbf{NXP Semiconductors} -- Edge Security | ML Research Intern \hfill May 2022 -- Aug 2022
+\begin{itemize}
+    \item Applied statistical and machine learning algorithms (\textit{incl. logistic regression, perceptrons, time-convolutional neural networks, decision trees, k-nearest neighbors, random forests, support vector regressions}) to monitor CPU performance counters for Spectre and Meltdown type side-channel attacks (\textit{Python, scikit-learn, pandas, statsmodels, NumPy, MLJar})
+\end{itemize}
+
+\section{Selected Projects}
+
+\vspace{3pt}
+\textbf{ProxyVM} -- In collaboration with Intel Labs and the Semiconductor Research Corporation \hfill Jan 2022 - Jan 2023
+\begin{itemize}
+    \item Augment profiling tools with differential privacy to enable ML hardware supply chain collaboration without loss of privacy
+    \item Accelerated pre-silicon hardware simulations while maintaining high performance predictability by generating augmented performance traces (basic block vectors augmented with data access pattern vectors).
+    \item Extended existing system to emerging hardware and workloads using LLVM and MLIR as a compatibility layer
+    \item Modify cross-platform machine learning compiler to generate execution traces for benchmarking on CPU, GPU, FPGA, and ASIC
+\end{itemize}
+
+\vspace{3pt}
+\textbf{I See Dead Micro-Ops} \hfill Sep 2019 -- Jan 2021
+\begin{itemize}
+    \item Analyzed Intel x86 processor design documents to discover potential vulnerability, craft microbenchmarks to reverse undocumented CPU features, and design proof-of-concept exploits for novel vulnerabilities
+    \item Designed micro-architectural benchmarks that characterized undocumented x86 instruction translation mechanisms
+    \item Published novel spectre-type attack in \href{https://ieeexplore.ieee.org/document/9499837}{International Symposium on Computer Architecture} (15\% acceptance rate).
+    \item Published SMT performance-preserving speculative side-channel defenses to protect processors without compromising performance. \href{https://www.usenix.org/conference/usenixsecurity22/presentation/taram}{USENIX security} (18\% acceptance rate)
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Equity AI} \textit{(Honors Thesis, Summa Cum Laude)} \hfill Dec 2017 -- May 2019
+\begin{itemize}
+    \item Distributed bayesian hyperparameter optimization over a small ($\sim$50 machines) cluster, using idle lab computing.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Int'l Genetically Engineered Machines Contest} \textit{(iGEM 2017, Int'l 2nd Place \& Best Model Award)} \hfill Oct 2016 -- Sep 2017
+\begin{itemize}
+    \item Won 2nd place overall \& best math model in \href{https://2017.igem.org/Team:William_and_Mary/Speed_Control}{international genetic engineering contest} (iGEM 2017)
+    \item Modeled genetic circuits with partial differential models + MCMC, testing predictions against wet-lab experimental results
+    \item Designed plasmid to implement protein-protease gene circuit to demonstrate novel gene expression rate control method
+\end{itemize}
+
+\end{document}
