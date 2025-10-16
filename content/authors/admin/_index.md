@@ -73,7 +73,7 @@ highlight_name: true
 
 I am Cedar Ren. I write kernels, compiler, simulation, and other systems code for high-performance LLM acceleration ASICs.
 
-I'm interested in systems, hierarchies of astraction, and representations of knowledge.
+I'm interested in systems, hierarchies of abstraction, and representations of knowledge.
 
 I feel at home with people who like words, numbers, and diagrams.
 
