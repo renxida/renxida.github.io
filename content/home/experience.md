@@ -26,7 +26,6 @@ experience:
     company: MatX
     company_url: 'https://matx.com'
     company_logo: org-matx
-    location: San Francisco Bay Area
     date_start: '2025-04-01'
     date_end: ''
     description: |2-
@@ -38,7 +37,6 @@ experience:
     company: AMD
     company_url: 'https://www.amd.com'
     company_logo: org-amd
-    location: Seattle, Washington
     date_start: '2023-11-01'
     date_end: '2025-04-01'
     description: |2-
@@ -50,7 +48,6 @@ experience:
     company: Intel Labs
     company_url: 'https://www.intel.com/content/www/us/en/research/overview.html'
     company_logo: org-intellabs
-    location: Portland, Oregon
     date_start: '2022-08-22'
     date_end: '2023-11-01'
     description: |2-
@@ -63,7 +60,6 @@ experience:
     company: University of Virginia
     company_url: 'https://engineering.virginia.edu/departments/computer-science'
     company_logo: org-uva
-    location: Charlottesville, Virginia
     date_start: '2019-08-23'
     date_end: '2023-08-01'
     description: |2-

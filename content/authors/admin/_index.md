@@ -65,7 +65,7 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'renresearch.proponent514@passmail.net'
+email: ''
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
