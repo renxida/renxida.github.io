@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#141826">
+<title>Listen</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+/* VOICE: quiet, late-night radio; the book is the only bright thing.
+   IDEA: a bedside radio dial. PICTURE: the big seek dial and the book title.
+   COLOUR: ink #141826, panel #1d2236, amber #f2a65a accent. TYPE: system sans.
+   LAYOUT: library list, now-playing sheet that slides up from a mini bar. */
+:root{--bg:#141826;--panel:#1d2236;--panel2:#262c44;--ink:#eef0f6;--dim:#9aa1b8;--acc:#f2a65a;--line:#2e3550}
+*{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:clip}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+button:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:8px}
+header{padding:calc(env(safe-area-inset-top) + 18px) 18px 6px;display:flex;align-items:center;gap:10px}
+header h1{font-size:28px;line-height:1.1;margin:0;flex:1;letter-spacing:-.01em}
+#sync{font-size:13px;color:var(--dim)}
+#list{padding:6px 12px 140px;display:grid;gap:10px}
+.book{background:var(--panel);border-radius:16px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;text-align:left;width:100%}
+.book .t{font-weight:650;font-size:18px;line-height:1.25}
+.book .a{color:var(--dim);font-size:14px}
+.book .m{grid-column:1/-1;display:flex;gap:10px;align-items:center;font-size:13px;color:var(--dim)}
+.bar{height:4px;background:var(--line);border-radius:2px;flex:1;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc)}
+.book.on{outline:1px solid var(--acc)}
+.empty{color:var(--dim);padding:40px 8px;text-align:center}
+#lock{padding:60px 24px;text-align:center;color:var(--dim)}
+#lock b{color:var(--ink);display:block;font-size:20px;margin-bottom:8px}
+/* mini bar */
+#mini{position:fixed;left:10px;right:10px;bottom:calc(env(safe-area-inset-bottom) + 10px);background:var(--panel2);border-radius:16px;display:none;align-items:center;gap:10px;padding:10px 12px;box-shadow:0 10px 30px #0008}
+#mini.show{display:flex}
+#mini .txt{flex:1;overflow:hidden}
+#mini .txt div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#mini .txt .s{font-size:13px;color:var(--dim)}
+.ib{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;flex:none}
+.ib svg{width:26px;height:26px;fill:currentColor}
+.play{background:var(--acc);color:#1b1206}
+/* full player */
+#full{position:fixed;inset:0;background:var(--bg);transform:translateY(100%);transition:transform .25s ease;display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top) + 8px) 20px calc(env(safe-area-inset-bottom) + 18px);overflow-y:auto}
+#full.open{transform:none}
+@media (prefers-reduced-motion:reduce){#full{transition:none}}
+#full .top{display:flex;justify-content:space-between;align-items:center}
+#full .top button{padding:10px;color:var(--dim)}
+.disc{margin:18px auto 10px;width:min(70vw,280px);aspect-ratio:1;border-radius:28px;background:radial-gradient(circle at 30% 50%,#f2a65a33,transparent 60%),var(--panel);display:grid;place-items:center;padding:24px;text-align:center}
+.disc .bt{font-size:clamp(22px,7vw,32px);font-weight:700;line-height:1.1}
+.disc .ba{color:var(--dim);margin-top:8px}
+#ftitle{text-align:center;font-weight:600;margin-top:8px}
+#fmark{text-align:center;color:var(--dim);font-size:14px;min-height:21px}
+#seek{width:100%;margin:16px 0 2px;accent-color:var(--acc);height:28px}
+.times{display:flex;justify-content:space-between;color:var(--dim);font-size:13px;font-variant-numeric:tabular-nums}
+.ctl{display:flex;justify-content:space-between;align-items:center;margin:14px 0}
+.ctl .big{width:76px;height:76px}
+.ctl .big svg{width:38px;height:38px}
+.skip{position:relative}
+.skip span{position:absolute;font-size:10px;font-weight:700;inset:0;display:grid;place-items:center;padding-top:2px}
+.row{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:none}
+.row::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:8px 14px;border-radius:999px;background:var(--panel);font-size:14px;min-height:40px;font-variant-numeric:tabular-nums}
+.chip.on{background:var(--acc);color:#1b1206;font-weight:650}
+.lbl{font-size:13px;color:var(--dim);margin:12px 0 2px}
+#marks button,#tracks button{display:flex;justify-content:space-between;gap:10px;width:100%;text-align:left;padding:10px 4px;border-bottom:1px solid var(--line)}
+#marks .on,#tracks .on{color:var(--acc)}
+.small{font-size:12px;color:var(--dim);margin-top:16px}
+.del{color:var(--dim);font-size:13px;padding:8px 0}
+</style>
+</head>
+<body>
+<header><h1>Listen</h1><span id="sync"></span></header>
+<main id="list"></main>
+<div id="lock" hidden><b>Locked</b>Open your install link once on this phone to unlock your library.</div>
+
+<div id="mini" role="region" aria-label="Now playing">
+  <button class="txt" id="miniOpen" aria-label="Open player"><div id="miniT"></div><div class="s" id="miniS"></div></button>
+  <button class="ib play" id="miniPlay" aria-label="Play or pause"></button>
+</div>
+
+<section id="full" aria-label="Player">
+  <div class="top"><button id="close" aria-label="Close player">▾ Library</button><button id="trackBtn"></button></div>
+  <div class="disc"><div><div class="bt" id="fbook"></div><div class="ba" id="fauth"></div></div></div>
+  <div id="ftitle"></div>
+  <div id="fmark"></div>
+  <input type="range" id="seek" min="0" max="1000" value="0" aria-label="Position">
+  <div class="times"><span id="cur">0:00</span><span id="left">-0:00</span></div>
+  <div class="ctl">
+    <button class="ib" id="prev" aria-label="Previous section"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
+    <button class="ib skip" id="back" aria-label="Back 15 seconds"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg><span>15</span></button>
+    <button class="ib play big" id="play" aria-label="Play or pause"></button>
+    <button class="ib skip" id="fwd" aria-label="Forward 30 seconds"><svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z"/></svg><span>30</span></button>
+    <button class="ib" id="next" aria-label="Next section"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6zm10-12h2v12h-2z"/></svg></button>
+  </div>
+  <div class="lbl">Speed</div><div class="row" id="speeds"></div>
+  <div class="lbl">Sleep timer</div><div class="row" id="sleeps"></div>
+  <div class="lbl" id="marksL">Sections</div><div id="marks"></div>
+  <div class="lbl" id="tracksL">Chapters</div><div id="tracks"></div>
+  <button class="del" id="restart">Start this book over</button>
+  <div class="small" id="src"></div>
+</section>
+<audio id="a" preload="auto"></audio>
+<script src="app.js"></script>
+</body>
+</html>
