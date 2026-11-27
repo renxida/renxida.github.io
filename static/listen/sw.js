@@ -1,5 +1,5 @@
 // App shell cache. Audio and library live in IndexedDB, not here.
-const V = 'listen-shell-v2';
+const V = 'listen-shell-v3';
 const SHELL = ['./', './index.html', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));

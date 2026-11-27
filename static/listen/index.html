@@ -47,6 +47,7 @@ header h1{font-size:28px;line-height:1.1;margin:0;flex:1;letter-spacing:-.01em}
 /* full player */
 #full{position:fixed;inset:0;background:var(--bg);transform:translateY(100%);transition:transform .25s ease;display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top) + 8px) 20px calc(env(safe-area-inset-bottom) + 18px);overflow-y:auto}
 #full.open{transform:none}
+#full>*{flex:none}
 @media (prefers-reduced-motion:reduce){#full{transition:none}}
 #full .top{display:flex;justify-content:space-between;align-items:center}
 #full .top button{padding:10px;color:var(--dim)}
@@ -60,8 +61,7 @@ header h1{font-size:28px;line-height:1.1;margin:0;flex:1;letter-spacing:-.01em}
 .ctl{display:flex;justify-content:space-between;align-items:center;margin:14px 0}
 .ctl .big{width:76px;height:76px}
 .ctl .big svg{width:38px;height:38px}
-.skip{position:relative}
-.skip span{position:absolute;font-size:10px;font-weight:700;inset:0;display:grid;place-items:center;padding-top:2px}
+.skip{width:60px;height:60px;border:2px solid var(--line);font-size:16px;font-weight:650;font-variant-numeric:tabular-nums}
 .row{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:none}
 .row::-webkit-scrollbar{display:none}
 .chip{flex:none;padding:8px 14px;border-radius:999px;background:var(--panel);font-size:14px;min-height:40px;font-variant-numeric:tabular-nums}
@@ -92,9 +92,9 @@ header h1{font-size:28px;line-height:1.1;margin:0;flex:1;letter-spacing:-.01em}
   <div class="times"><span id="cur">0:00</span><span id="left">-0:00</span></div>
   <div class="ctl">
     <button class="ib" id="prev" aria-label="Previous section"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
-    <button class="ib skip" id="back" aria-label="Back 15 seconds"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg><span>15</span></button>
+    <button class="ib skip" id="back" aria-label="Back 15 seconds">−15</button>
     <button class="ib play big" id="play" aria-label="Play or pause"></button>
-    <button class="ib skip" id="fwd" aria-label="Forward 30 seconds"><svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z"/></svg><span>30</span></button>
+    <button class="ib skip" id="fwd" aria-label="Forward 30 seconds">+30</button>
     <button class="ib" id="next" aria-label="Next section"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6zm10-12h2v12h-2z"/></svg></button>
   </div>
   <div class="lbl">Speed</div><div class="row" id="speeds"></div>
