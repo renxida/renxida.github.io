@@ -1,5 +1,5 @@
 // App shell cache. Audio and library live in IndexedDB, not here.
-const V = 'listen-shell-v3';
+const V = 'listen-shell-v4';
 const SHELL = ['./', './index.html', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -12,7 +12,7 @@ self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET' || u.origin !== location.origin || !u.pathname.startsWith('/listen/')) return;
   // network first so updates land, cache when offline
   e.respondWith(
-    fetch(e.request).then(r => {
+    fetch(u.href, {cache: 'no-cache', credentials: 'same-origin'}).then(r => {
       if (r.ok) { const c = r.clone(); caches.open(V).then(cc => cc.put(e.request, c)); }
       return r;
     }).catch(() => caches.match(e.request, {ignoreSearch: true}).then(r => r || caches.match('./index.html')))
